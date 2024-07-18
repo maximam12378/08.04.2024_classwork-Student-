@@ -10,51 +10,50 @@ int main()
 {
 	
 	Student Maksim;
-	Maksim.create_Student();
+	Maksim.create_Student(); // Метод для введення усіх даних з консолі
+	Maksim.show_student(); // метод друкування інформації про студента
+	//Maksim.set_nm_srnm_pobat();			// Приклад призначення ПІБ без передачі у вигляді парметрів(назначення відбувається через "cin")
+	char name[255] = "Maksym", surname[255] = "Batashan", po_batkovi[255] = "Evhenovych";
+	Maksim.set_nm_srnm_pobat(name, surname, po_batkovi);
+
+	char city[255] = "Odesa", country[255] = "Ukraine";
+	Maksim.set_home(city, country);
+
+	char edu_name[255] = "ITSTEP";
+	Maksim.set_edu_nm(edu_name);
+
+	Maksim.set_edu_place(city, country);
+	
+	Maksim.set_birthd(29, 11, 2006);
+
+	char number[18] = "+380 63 942 0220";
+	Maksim.set_phone_num(number);
+	
+	char gr_number[18] = "PV311";
+	Maksim.set_group_num(gr_number);
+	
 	Maksim.show_student();
-	////Maksim.set_nm_srnm_pobat();			// Приклад призначення ПІБ без передачі у вигляді парметрів(назначення відбувається через "cin")
-	//char name[255] = "Maksym", surname[255] = "Batashan", po_batkovi[255] = "Evhenovych";
-	//Maksim.set_nm_srnm_pobat(name, surname, po_batkovi);
-
-	//char city[255] = "Odesa", country[255] = "Ukraine";
-	//Maksim.set_home(city, country);
-
-	//char edu_name[255] = "ITSTEP";
-	//Maksim.set_edu_nm(edu_name);
-
-	//Maksim.set_edu_place(city, country);
-	//
-	//Maksim.set_birthd(29, 11, 2006);
-
-	//char number[18] = "+380 63 942 0220";
-	//Maksim.set_phone_num(number);
-	//
-	//char gr_number[18] = "PV311";
-	//Maksim.set_group_num(gr_number);
-	//
-	//Maksim.show_student();
 
 
-	//
-	//Student Diana;
-	//char name2[255] = "Diana", surname2[255] = "Batashan", po_batkovi2[255] = "Evhenivna";
-	//Diana.set_nm_srnm_pobat(name2, surname2, po_batkovi2);
+	Student Diana;
+	char name2[255] = "Diana", surname2[255] = "Batashan", po_batkovi2[255] = "Evhenivna";
+	Diana.set_nm_srnm_pobat(name2, surname2, po_batkovi2);
 
-	//char city2[255] = "Odesa", country2[255] = "Ukraine";
-	//Diana.set_home(city, country);
+	char city2[255] = "Odesa", country2[255] = "Ukraine";
+	Diana.set_home(city, country);
 
-	//char edu_name2[255] = "Middle School";
-	//Diana.set_edu_nm(edu_name2);
+	char edu_name2[255] = "Middle School";
+	Diana.set_edu_nm(edu_name2);
 
-	//Diana.set_edu_place(city2, country2);
+	Diana.set_edu_place(city2, country2);
 
-	//Diana.set_birthd(20, 12, 2010);
+	Diana.set_birthd(20, 12, 2010);
 
-	//char number2[18] = "+380 73 768 2280";
-	//Diana.set_phone_num(number2);
+	char number2[18] = "+380 73 768 2280";
+	Diana.set_phone_num(number2);
 
-	//char gr_number2[18] = "8-D";
-	//Diana.set_group_num(gr_number2);
+	char gr_number2[18] = "8-D";
+	Diana.set_group_num(gr_number2);
 
-	//Diana.show_student();
+	Diana.show_student();
 }
